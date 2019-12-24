@@ -1,0 +1,28 @@
+{
+  "name": "consul_dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purcelllj/consul_dashboard.git"
+  },
+  "author": "Liam Purcell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/purcelllj/consul_dashboard/issues"
+  },
+  "homepage": "https://github.com/purcelllj/consul_dashboard#readme"
+}

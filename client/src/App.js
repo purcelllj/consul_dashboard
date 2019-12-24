@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ServiceList from './Components/ServiceList';
+import getServices from './Components/Api/ServicesApi';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Consul Services Dashboard</h1>
+        <h4>User Liam Purcell</h4>
       </header>
+      <section>
+        <ServiceList getServices={getServices}></ServiceList>
+      </section>
     </div>
   );
 }
