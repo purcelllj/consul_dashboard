@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import getServices from './Api/ServicesApi';
+import getServices from './Api/GetServicesApi';
+//import getService from './Api/GetServiceByNameApi';
 
 class ServiceList extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class ServiceList extends Component {
   async componentDidMount() {
     let servicesResponse = await getServices();
     let json = await servicesResponse.json();
-    this.setState({ services: Object.keys(json)});
+    this.setState({ services: Object.keys(json) });
   }
 
   render() {
